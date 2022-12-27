@@ -80,12 +80,15 @@ class BarangKeluarController extends BaseController
 
     // echo view('Barang/getID');
 
-    public function tampilKode()
+    public function cetakBarangKeluar()
     {
+        $tglawal = $this->request->getPost('tglawal');
+        $tglakhir = $this->request->getPost('tglakhir');
+
         $data = [
-            'barang' => $this->dataBarangKeluar->where('id_barang', $_POST['daterange']->first())
+            'barangKeluar' => $this->dataBarangKeluar->where('id_barang', $tglawal, $tglakhir)->first()
         ];
 
-        echo json_encode($data);
+        echo view('Barang/Print-Barang-Keluar', $data);
     }
 }

@@ -60,6 +60,8 @@ $routes->post('/tampilKode', 'Barang\BarangController::tampilKode');
 $routes->post('/barangKeluar', 'Barang\BarangKeluarController::barangKeluar');
 $routes->get('/barangKeluar/delete/(:num)', 'Barang\BarangKeluarController::delete/$1');
 
+$routes->get('/barangkeluar/cetak', 'Barang\BarangKeluarController::cetakBarangKeluar');
+
 
 
 /*

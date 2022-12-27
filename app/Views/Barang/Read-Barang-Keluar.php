@@ -43,6 +43,9 @@
                                 <div class="col-lg-2">
                                     <input type="date" name="tglakhir" id="tglakhir" class="form-control">
                                 </div>
+                                <div class="col-lg-2">
+                                    <button type="submit" name="cetak" class="btn btn-success" onclick="window.location='barangkeluar/cetak'">Cetak</button>
+                                </div>
                             </div>
                         </div>
 
