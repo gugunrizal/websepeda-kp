@@ -1,0 +1,127 @@
+CRITICAL - 2022-11-29 03:18:15 --> Undefined variable: barang
+in APPPATH\Views\Barang\Read-Barang.php on line 102.
+ 1 APPPATH\Views\Barang\Read-Barang.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: barang', 'APPPATH\\Views\\Barang\\Read-Barang.php', 102, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Read-Barang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang', [], true)
+ 5 APPPATH\Controllers\Barang\BarangController.php(129): view('Barang/Read-Barang')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->cetak()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 03:22:33 --> Undefined variable: barang
+in APPPATH\Views\Barang\Read-Barang.php on line 102.
+ 1 APPPATH\Views\Barang\Read-Barang.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: barang', 'APPPATH\\Views\\Barang\\Read-Barang.php', 102, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Read-Barang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang', [], true)
+ 5 APPPATH\Controllers\Barang\BarangController.php(137): view('Barang/Read-Barang')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->cetak()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 03:24:05 --> Invalid file: Barang/Print-Barang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Barang/Print-Barang.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang', [], true)
+ 3 APPPATH\Controllers\Barang\BarangController.php(137): view('Barang/Print-Barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->cetak()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 03:25:53 --> Invalid file: Barang/Print-Barang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Barang/Print-Barang.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang', [], true)
+ 3 APPPATH\Controllers\Barang\BarangController.php(137): view('Barang/Print-Barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->cetak()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 03:26:57 --> Undefined variable: barang
+in APPPATH\Views\Barang\Read-Barang.php on line 102.
+ 1 APPPATH\Views\Barang\Read-Barang.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: barang', 'APPPATH\\Views\\Barang\\Read-Barang.php', 102, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Read-Barang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang', [], true)
+ 5 APPPATH\Controllers\Barang\BarangController.php(137): view('Barang/Read-Barang')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->cetak()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 03:32:04 --> file_get_contents(Barang/Print-Barang): failed to open stream: No such file or directory
+in APPPATH\Controllers\Barang\BarangController.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(Barang/Print-Barang): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Barang\\BarangController.php', 137, [...])
+ 2 APPPATH\Controllers\Barang\BarangController.php(137): file_get_contents('Barang/Print-Barang')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->cetak()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 03:32:34 --> Invalid file: Barang/Print-Barang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Barang/Print-Barang.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang', [], true)
+ 3 APPPATH\Controllers\Barang\BarangController.php(137): view('Barang/Print-Barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->cetak()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 03:33:38 --> Invalid file: Barang/Print-Barang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Barang/Print-Barang.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang', [], true)
+ 3 APPPATH\Controllers\Barang\BarangController.php(137): view('Barang/Print-Barang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->cetak()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 03:34:17 --> Invalid file: Barang/Print-Barang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Barang/Print-Barang.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang', [], true)
+ 3 APPPATH\Controllers\Barang\BarangController.php(137): view('Barang/Print-Barang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->cetak()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 03:34:22 --> Invalid file: Barang/Print-Barang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Barang/Print-Barang.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang', [], true)
+ 3 APPPATH\Controllers\Barang\BarangController.php(137): view('Barang/Print-Barang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->cetak()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 03:48:15 --> Undefined variable: barang
+in APPPATH\Views\Barang\Read-Barang.php on line 102.
+ 1 APPPATH\Views\Barang\Read-Barang.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: barang', 'APPPATH\\Views\\Barang\\Read-Barang.php', 102, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Read-Barang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang', [], true)
+ 5 APPPATH\Controllers\Barang\BarangController.php(137): view('Barang/Read-Barang')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->cetak()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 03:49:40 --> Invalid file: Barang/Print-Barang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Barang/Print-Barang.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang', [], true)
+ 3 APPPATH\Controllers\Barang\BarangController.php(137): view('Barang/Print-Barang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->cetak()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,346 @@
+ERROR - 2022-12-27 09:31:05 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'web-kp', 3306, '', 0)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Admin\AdminController.php(25): CodeIgniter\Model->__call('get', Array)
+#6 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin\AdminController->login()
+#7 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#8 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Admin\AdminController.php(25): CodeIgniter\Model->__call('get', Array)
+#5 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin\AdminController->login()
+#6 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#7 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#10 {main}
+CRITICAL - 2022-12-27 09:31:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`', [], false)
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Admin\AdminController.php(25): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-27 09:44:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ LIMIT 1' at line 3 in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Barang\BarangKeluarController.php(88): CodeIgniter\BaseModel->first()
+#7 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+#8 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+#9 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#12 {main}
+CRITICAL - 2022-12-27 09:44:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ LIMIT 1' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Barang\BarangKeluarController.php(88): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-27 09:46:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ LIMIT 1' at line 3 in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Barang\BarangKeluarController.php(88): CodeIgniter\BaseModel->first()
+#7 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+#8 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+#9 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#12 {main}
+CRITICAL - 2022-12-27 09:46:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ LIMIT 1' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Barang\BarangKeluarController.php(88): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-27 09:48:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ LIMIT 1' at line 3 in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Barang\BarangKeluarController.php(89): CodeIgniter\BaseModel->first()
+#7 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+#8 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+#9 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#12 {main}
+CRITICAL - 2022-12-27 09:48:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ LIMIT 1' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Barang\BarangKeluarController.php(89): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-27 09:49:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ LIMIT 1' at line 3 in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Barang\BarangKeluarController.php(89): CodeIgniter\BaseModel->first()
+#7 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+#8 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+#9 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#12 {main}
+CRITICAL - 2022-12-27 09:49:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ LIMIT 1' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang_keluar`
+WHERE  IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Barang\BarangKeluarController.php(89): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 09:49:48 --> The route for "Barang/Print-Barang-Keluar" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Barang/Print-Barang-Keluar')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Barang\BarangKeluarController.php(96): redirect('Barang/Print-Barang-Keluar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 09:50:33 --> The route for "Barang/Print-Barang-Keluar" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Barang/Print-Barang-Keluar')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Barang\BarangKeluarController.php(96): redirect('Barang/Print-Barang-Keluar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 09:50:35 --> The route for "Barang/Print-Barang-Keluar" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Barang/Print-Barang-Keluar')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Barang\BarangKeluarController.php(96): redirect('Barang/Print-Barang-Keluar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 09:53:42 --> Undefined variable: dataBarangKeluar
+in APPPATH\Views\Barang\Print-Barang-Keluar.php on line 12.
+ 1 APPPATH\Views\Barang\Print-Barang-Keluar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataBarangKeluar', 'APPPATH\\Views\\Barang\\Print-Barang-Keluar.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Print-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(96): view('Barang/Print-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 09:54:07 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Barang\Print-Barang-Keluar.php on line 12.
+ 1 APPPATH\Views\Barang\Print-Barang-Keluar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\Barang\\Print-Barang-Keluar.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Print-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(96): view('Barang/Print-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 09:55:49 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Barang\Print-Barang-Keluar.php on line 12.
+ 1 APPPATH\Views\Barang\Print-Barang-Keluar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\Barang\\Print-Barang-Keluar.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Print-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(96): view('Barang/Print-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 09:56:01 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Barang\Print-Barang-Keluar.php on line 13.
+ 1 APPPATH\Views\Barang\Print-Barang-Keluar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\Barang\\Print-Barang-Keluar.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Print-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(96): view('Barang/Print-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 09:58:30 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Barang\Print-Barang-Keluar.php on line 12.
+ 1 APPPATH\Views\Barang\Print-Barang-Keluar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\Barang\\Print-Barang-Keluar.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Print-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(92): view('Barang/Print-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 09:59:16 --> Argument 2 passed to view() must be of the type array, null given, called in D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Barang\BarangKeluarController.php on line 90
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\Barang\BarangKeluarController.php(90): view('Barang/Print-Barang-Keluar', null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 09:59:51 --> Argument 2 passed to view() must be of the type array, null given, called in D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Barang\BarangKeluarController.php on line 90
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\Barang\BarangKeluarController.php(90): view('Barang/Print-Barang-Keluar', null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 09:59:59 --> Undefined variable: barangKeluar
+in APPPATH\Views\Barang\Print-Barang-Keluar.php on line 12.
+ 1 APPPATH\Views\Barang\Print-Barang-Keluar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: barangKeluar', 'APPPATH\\Views\\Barang\\Print-Barang-Keluar.php', 12, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Print-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(90): view('Barang/Print-Barang-Keluar')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 10:00:29 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Barang\Print-Barang-Keluar.php on line 12.
+ 1 APPPATH\Views\Barang\Print-Barang-Keluar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\Barang\\Print-Barang-Keluar.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Print-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Print-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(92): view('Barang/Print-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->cetakBarangKeluar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

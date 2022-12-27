@@ -1,0 +1,30 @@
+CRITICAL - 2022-11-30 01:51:04 --> The route for "Barang/Print-Barang" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Barang/Print-Barang')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Barang\BarangController.php(150): redirect('Barang/Print-Barang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->printPdf()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-30 01:51:33 --> The route for "Barang/Print_Barang" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Barang/Print_Barang')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Barang\BarangController.php(150): redirect('Barang/Print_Barang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->printPdf()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-30 01:51:41 --> The route for "Barang/Print_Barang" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Barang/Print_Barang')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Barang\BarangController.php(150): redirect('Barang/Print_Barang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->printPdf()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

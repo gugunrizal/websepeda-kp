@@ -1,0 +1,47 @@
+CRITICAL - 2022-12-08 08:45:34 --> Class 'Locale' not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2022-12-08 08:47:12 --> Class 'Locale' not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2022-12-08 01:48:23 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'web-kp' in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'web-kp', 3306, '', 0)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Admin\AdminController.php(21): CodeIgniter\Model->__call('get', Array)
+#6 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin\AdminController->login()
+#7 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#8 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'web-kp' in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Admin\AdminController.php(21): CodeIgniter\Model->__call('get', Array)
+#5 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin\AdminController->login()
+#6 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#7 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#10 {main}
+CRITICAL - 2022-12-08 01:48:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'web-kp'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`', [], false)
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Admin\AdminController.php(21): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

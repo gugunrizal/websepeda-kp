@@ -1,0 +1,46 @@
+CRITICAL - 2022-12-19 01:27:39 --> Too few arguments to function App\Controllers\Barang\BarangController::getID(), 0 passed in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Barang\BarangController.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->getID()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 01:29:16 --> Undefined index: barang
+in APPPATH\Controllers\Barang\BarangController.php on line 165.
+ 1 APPPATH\Controllers\Barang\BarangController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: barang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 165, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->getID()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 01:29:27 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Barang\Barang-Keluar.php on line 32.
+ 1 APPPATH\Views\Barang\Barang-Keluar.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\Barang\\Barang-Keluar.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangController.php(167): view('Barang/Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->getID()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 02:12:38 --> Call to undefined method App\Controllers\Barang\BarangController::tampilID()
+in APPPATH\Controllers\Barang\BarangController.php on line 156.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->getID()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 09:51:46 --> Undefined index: id_barang
+in APPPATH\Views\Barang\Read-Barang-Keluar.php on line 63.
+ 1 APPPATH\Views\Barang\Read-Barang-Keluar.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_barang', 'APPPATH\\Views\\Barang\\Read-Barang-Keluar.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Read-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(26): view('Barang/Read-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

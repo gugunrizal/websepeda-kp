@@ -1,0 +1,12 @@
+CRITICAL - 2022-12-25 18:41:56 --> Undefined index: skode_barang
+in APPPATH\Views\Barang\Barang-Keluar.php on line 27.
+ 1 APPPATH\Views\Barang\Barang-Keluar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: skode_barang', 'APPPATH\\Views\\Barang\\Barang-Keluar.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangController.php(179): view('Barang/Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->getID()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

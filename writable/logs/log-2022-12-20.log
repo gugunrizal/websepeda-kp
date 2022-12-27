@@ -1,0 +1,675 @@
+CRITICAL - 2022-12-20 00:17:01 --> Undefined index: kode
+in APPPATH\Controllers\Barang\BarangController.php on line 172.
+ 1 APPPATH\Controllers\Barang\BarangController.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kode', 'APPPATH\\Controllers\\Barang\\BarangController.php', 172, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->tampilKode()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:28:15 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, null)
+ 4 APPPATH\Controllers\Barang\BarangKeluarController.php(56): CodeIgniter\Model->update()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 00:30:39 --> mysqli_sql_exception: Column 'nama_barang' cannot be null in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ba...', 0)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Barang\BarangKeluarController.php(59): CodeIgniter\Model->insert(Array)
+#8 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+#9 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+#10 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#13 {main}
+CRITICAL - 2022-12-20 00:30:39 --> Column 'nama_barang' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `barang_keluar` (`nama_barang`) VALUES (NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `barang_keluar` (`nama_barang`) VALUES (NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `barang_keluar` (`nama_barang`) VALUES (NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang_keluar` (`nama_barang`) VALUES (:nama_barang:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Barang\BarangKeluarController.php(59): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:31:25 --> Undefined index: jenis_barang
+in APPPATH\Views\Barang\Read-Barang-Keluar.php on line 55.
+ 1 APPPATH\Views\Barang\Read-Barang-Keluar.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: jenis_barang', 'APPPATH\\Views\\Barang\\Read-Barang-Keluar.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Read-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(26): view('Barang/Read-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:40:14 --> Illegal string offset 'nama_barang'
+in APPPATH\Views\Barang\Read-Barang-Keluar.php on line 54.
+ 1 APPPATH\Views\Barang\Read-Barang-Keluar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_barang\'', 'APPPATH\\Views\\Barang\\Read-Barang-Keluar.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Read-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(27): view('Barang/Read-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:40:58 --> Illegal string offset 'nama_barang'
+in APPPATH\Views\Barang\Read-Barang-Keluar.php on line 54.
+ 1 APPPATH\Views\Barang\Read-Barang-Keluar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_barang\'', 'APPPATH\\Views\\Barang\\Read-Barang-Keluar.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Read-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(28): view('Barang/Read-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:41:01 --> Illegal string offset 'nama_barang'
+in APPPATH\Views\Barang\Read-Barang-Keluar.php on line 54.
+ 1 APPPATH\Views\Barang\Read-Barang-Keluar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_barang\'', 'APPPATH\\Views\\Barang\\Read-Barang-Keluar.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Read-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(28): view('Barang/Read-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:41:37 --> Illegal string offset 'nama_barang'
+in APPPATH\Views\Barang\Read-Barang-Keluar.php on line 54.
+ 1 APPPATH\Views\Barang\Read-Barang-Keluar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_barang\'', 'APPPATH\\Views\\Barang\\Read-Barang-Keluar.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Read-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(28): view('Barang/Read-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:41:48 --> syntax error, unexpected '?>'
+in APPPATH\Views\Barang\Read-Barang-Keluar.php on line 54.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang-Keluar', [], true)
+ 3 APPPATH\Controllers\Barang\BarangKeluarController.php(28): view('Barang/Read-Barang-Keluar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:41:55 --> Illegal string offset 'jenis_barang'
+in APPPATH\Views\Barang\Read-Barang-Keluar.php on line 55.
+ 1 APPPATH\Views\Barang\Read-Barang-Keluar.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'jenis_barang\'', 'APPPATH\\Views\\Barang\\Read-Barang-Keluar.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\Read-Barang-Keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangKeluarController.php(28): view('Barang/Read-Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 01:00:07 --> mysqli_sql_exception: Unknown column 'barang_keluar.nama_barang' in 'on clause' in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\RYZ-PROJECT\CI4\web-kp\app\Models\BarangKeluarModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Barang\BarangKeluarController.php(22): App\Models\BarangKeluarModel->join()
+#6 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+#7 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+#8 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#11 {main}
+CRITICAL - 2022-12-20 01:00:07 --> Unknown column 'barang_keluar.nama_barang' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `barang_keluar`
+JOIN `barang` ON `barang`.`nama_barang` = `barang_keluar`.`nama_barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang_keluar`
+JOIN `barang` ON `barang`.`nama_barang` = `barang_keluar`.`nama_barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang_keluar`
+JOIN `barang` ON `barang`.`nama_barang` = `barang_keluar`.`nama_barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang_keluar`
+JOIN `barang` ON `barang`.`nama_barang` = `barang_keluar`.`nama_barang`', [], false)
+ 5 APPPATH\Models\BarangKeluarModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Barang\BarangKeluarController.php(22): App\Models\BarangKeluarModel->join()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 01:00:37 --> mysqli_sql_exception: Unknown column 'barang_keluar.nama_barang' in 'on clause' in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\RYZ-PROJECT\CI4\web-kp\app\Models\BarangKeluarModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Barang\BarangKeluarController.php(22): App\Models\BarangKeluarModel->join()
+#6 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+#7 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+#8 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#11 {main}
+CRITICAL - 2022-12-20 01:00:37 --> Unknown column 'barang_keluar.nama_barang' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `barang_keluar`
+JOIN `barang` ON `barang`.`nama_barang` = `barang_keluar`.`nama_barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang_keluar`
+JOIN `barang` ON `barang`.`nama_barang` = `barang_keluar`.`nama_barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang_keluar`
+JOIN `barang` ON `barang`.`nama_barang` = `barang_keluar`.`nama_barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang_keluar`
+JOIN `barang` ON `barang`.`nama_barang` = `barang_keluar`.`nama_barang`', [], false)
+ 5 APPPATH\Models\BarangKeluarModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Barang\BarangKeluarController.php(22): App\Models\BarangKeluarModel->join()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 01:06:58 --> Call to a member function getPath() on null
+in APPPATH\Views\Layout\PageLayout.php on line 204.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Layout/PageLayout', [], true)
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Barang-Keluar', [], true)
+ 5 APPPATH\Controllers\Barang\BarangController.php(169): view('Barang/Barang-Keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->getID()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 01:16:35 --> Undefined property: App\Controllers\Barang\BarangKeluarController::$BarangKeluarModel
+in APPPATH\Controllers\Barang\BarangKeluarController.php on line 42.
+ 1 APPPATH\Controllers\Barang\BarangKeluarController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangKeluarController::$BarangKeluarModel', 'APPPATH\\Controllers\\Barang\\BarangKeluarController.php', 42, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 01:17:33 --> Undefined property: App\Controllers\Barang\BarangKeluarController::$BarangKeluarModel
+in APPPATH\Controllers\Barang\BarangKeluarController.php on line 50.
+ 1 APPPATH\Controllers\Barang\BarangKeluarController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangKeluarController::$BarangKeluarModel', 'APPPATH\\Controllers\\Barang\\BarangKeluarController.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 01:17:54 --> Call to a member function where() on null
+in APPPATH\Models\BarangKeluarModel.php on line 28.
+ 1 APPPATH\Controllers\Barang\BarangKeluarController.php(50): App\Models\BarangKeluarModel->add(true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 01:18:50 --> Call to a member function where() on null
+in APPPATH\Models\BarangKeluarModel.php on line 27.
+ 1 APPPATH\Controllers\Barang\BarangKeluarController.php(50): App\Models\BarangKeluarModel->add(true, Object(App\Models\BarangModel))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 01:19:38 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Barang\BarangKeluarController.php on line 54.
+ 1 APPPATH\Controllers\Barang\BarangKeluarController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Barang\\BarangKeluarController.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 01:19:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Barang\BarangKeluarController.php on line 54.
+ 1 APPPATH\Controllers\Barang\BarangKeluarController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Barang\\BarangKeluarController.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 01:20:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Barang\BarangKeluarController.php on line 54.
+ 1 APPPATH\Controllers\Barang\BarangKeluarController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Barang\\BarangKeluarController.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 01:20:43 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Barang\BarangKeluarController.php on line 54.
+ 1 APPPATH\Controllers\Barang\BarangKeluarController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Barang\\BarangKeluarController.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 01:22:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`web-kp`.`barang_keluar`, CONSTRAINT `barang_keluar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`) ON UPDATE CASCADE) in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ba...', 0)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Barang\BarangKeluarController.php(60): CodeIgniter\Model->insert(Array)
+#8 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+#9 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+#10 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#13 {main}
+CRITICAL - 2022-12-20 01:22:03 --> Cannot add or update a child row: a foreign key constraint fails (`web-kp`.`barang_keluar`, CONSTRAINT `barang_keluar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `barang_keluar` (`jumlah`) VALUES (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `barang_keluar` (`jumlah`) VALUES (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `barang_keluar` (`jumlah`) VALUES (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang_keluar` (`jumlah`) VALUES (:jumlah:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Barang\BarangKeluarController.php(60): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 01:25:02 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`web-kp`.`barang_keluar`, CONSTRAINT `barang_keluar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`) ON UPDATE CASCADE) in D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ba...', 0)
+#1 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\RYZ-PROJECT\CI4\web-kp\app\Controllers\Barang\BarangKeluarController.php(60): CodeIgniter\Model->insert(Array)
+#8 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+#9 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+#10 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\RYZ-PROJECT\CI4\web-kp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\RYZ-PROJECT\CI4\web-kp\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\RYZ-PROJECT\\...')
+#13 {main}
+CRITICAL - 2022-12-20 01:25:02 --> Cannot add or update a child row: a foreign key constraint fails (`web-kp`.`barang_keluar`, CONSTRAINT `barang_keluar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `barang_keluar` (`jumlah`) VALUES (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `barang_keluar` (`jumlah`) VALUES (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `barang_keluar` (`jumlah`) VALUES (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang_keluar` (`jumlah`) VALUES (:jumlah:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Barang\BarangKeluarController.php(60): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->barangKeluar()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 01:37:29 --> Illegal string offset 'id_barang'
+in APPPATH\Controllers\Barang\BarangKeluarController.php on line 20.
+ 1 APPPATH\Controllers\Barang\BarangKeluarController.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_barang\'', 'APPPATH\\Controllers\\Barang\\BarangKeluarController.php', 20, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->delete('8')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 01:59:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\Layout\PageLayout.php on line 78.
+ 1 APPPATH\Views\Layout\PageLayout.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Layout\\PageLayout.php', 78, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Layout\\PageLayout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Layout/PageLayout', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang', [], true)
+ 6 APPPATH\Controllers\Barang\BarangController.php(40): view('Barang/Read-Barang', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->read()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:00:07 --> Trying to access array offset on value of type null
+in APPPATH\Views\Layout\PageLayout.php on line 28.
+ 1 APPPATH\Views\Layout\PageLayout.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Layout\\PageLayout.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Layout\\PageLayout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Layout/PageLayout', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang', [], true)
+ 6 APPPATH\Controllers\Barang\BarangController.php(40): view('Barang/Read-Barang', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->read()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:03:08 --> The route for "aa" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('aa')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Barang\BarangController.php(14): redirect('aa')
+ 4 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Barang\BarangController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:04:13 --> The route for "/login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/login')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Barang\BarangController.php(14): redirect('/login')
+ 4 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Barang\BarangController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:04:36 --> Undefined property: App\Controllers\Barang\BarangController::$dataBarang
+in APPPATH\Controllers\Barang\BarangController.php on line 38.
+ 1 APPPATH\Controllers\Barang\BarangController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangController::$dataBarang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 38, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->read()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:05:17 --> Undefined property: App\Controllers\Barang\BarangController::$dataBarang
+in APPPATH\Controllers\Barang\BarangController.php on line 37.
+ 1 APPPATH\Controllers\Barang\BarangController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangController::$dataBarang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 37, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->read()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:05:22 --> The route for "/login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/login')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Barang\BarangController.php(14): redirect('/login')
+ 4 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Barang\BarangController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:05:25 --> Undefined property: App\Controllers\Barang\BarangController::$dataBarang
+in APPPATH\Controllers\Barang\BarangController.php on line 37.
+ 1 APPPATH\Controllers\Barang\BarangController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangController::$dataBarang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 37, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->read()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:05:34 --> Undefined property: App\Controllers\Barang\BarangController::$dataBarang
+in APPPATH\Controllers\Barang\BarangController.php on line 37.
+ 1 APPPATH\Controllers\Barang\BarangController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangController::$dataBarang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 37, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->read()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:06:23 --> Undefined property: App\Controllers\Barang\BarangController::$dataBarang
+in APPPATH\Controllers\Barang\BarangController.php on line 37.
+ 1 APPPATH\Controllers\Barang\BarangController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangController::$dataBarang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 37, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->read()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:06:31 --> Undefined property: App\Controllers\Barang\BarangController::$dataBarang
+in APPPATH\Controllers\Barang\BarangController.php on line 37.
+ 1 APPPATH\Controllers\Barang\BarangController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangController::$dataBarang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 37, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->read()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:07:29 --> The route for "/login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/login')
+ 2 APPPATH\Controllers\Barang\BarangController.php(33): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->read()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:11:53 --> Undefined property: App\Controllers\Barang\BarangController::$dataBarang
+in APPPATH\Controllers\Barang\BarangController.php on line 38.
+ 1 APPPATH\Controllers\Barang\BarangController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangController::$dataBarang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 38, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->read()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:12:49 --> 'break' not in the 'loop' or 'switch' context
+in APPPATH\Controllers\Barang\BarangController.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-20 02:13:19 --> Undefined property: App\Controllers\Barang\BarangController::$dataBarang
+in APPPATH\Controllers\Barang\BarangController.php on line 26.
+ 1 APPPATH\Controllers\Barang\BarangController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangController::$dataBarang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 26, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:15:43 --> Undefined property: App\Controllers\Barang\BarangController::$dataBarang
+in APPPATH\Controllers\Barang\BarangController.php on line 26.
+ 1 APPPATH\Controllers\Barang\BarangController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangController::$dataBarang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 26, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:16:29 --> Undefined property: App\Controllers\Barang\BarangController::$dataBarang
+in APPPATH\Controllers\Barang\BarangController.php on line 28.
+ 1 APPPATH\Controllers\Barang\BarangController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangController::$dataBarang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 28, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:16:50 --> Undefined property: App\Controllers\Barang\BarangController::$dataBarang
+in APPPATH\Controllers\Barang\BarangController.php on line 29.
+ 1 APPPATH\Controllers\Barang\BarangController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangController::$dataBarang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 29, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:19:56 --> Undefined property: App\Controllers\Barang\BarangController::$dataBarang
+in APPPATH\Controllers\Barang\BarangController.php on line 34.
+ 1 APPPATH\Controllers\Barang\BarangController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Barang\\BarangController::$dataBarang', 'APPPATH\\Controllers\\Barang\\BarangController.php', 34, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:20:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\Layout\PageLayout.php on line 79.
+ 1 APPPATH\Views\Layout\PageLayout.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Layout\\PageLayout.php', 79, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Layout\\PageLayout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Layout/PageLayout', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Index', [], true)
+ 6 APPPATH\Controllers\Barang\BarangController.php(40): view('Index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:21:24 --> Undefined variable: loggedin
+in APPPATH\Controllers\Barang\BarangController.php on line 24.
+ 1 APPPATH\Controllers\Barang\BarangController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: loggedin', 'APPPATH\\Controllers\\Barang\\BarangController.php', 24, [])
+ 2 APPPATH\Controllers\Barang\BarangController.php(33): App\Controllers\Barang\BarangController->cekal()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:29:01 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:29:41 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:30:16 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:30:17 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:30:17 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:30:17 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:31:24 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:31:25 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:31:25 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:31:26 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:31:26 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:33:52 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:35:14 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:35:32 --> Auth filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('Auth')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('Auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:35:44 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:36:01 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:37:25 --> auth filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:37:37 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:37:50 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:38:32 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:38:41 --> Class 'Config\App\Filters\Auth' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:47:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\Layout\PageLayout.php on line 79.
+ 1 APPPATH\Views\Layout\PageLayout.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Layout\\PageLayout.php', 79, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Layout\\PageLayout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Layout/PageLayout', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Barang/Read-Barang-Keluar', [], true)
+ 6 APPPATH\Controllers\Barang\BarangKeluarController.php(41): view('Barang/Read-Barang-Keluar', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Barang\BarangKeluarController->read()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang\BarangKeluarController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
